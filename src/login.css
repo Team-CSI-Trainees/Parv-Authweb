@@ -1,0 +1,83 @@
+.login{
+    justify-content: center;
+    display: flex;
+    /* margin: 7rem; */
+
+}
+.login img{
+    border-radius: 6px 0px 0px 6px;
+    padding: 1rem 0rem 0rem 1.5rem;
+    margin: 7.5rem 0rem;
+    background-color: rgba(139, 182, 178, 0.63);   
+}
+.logindetails{
+    margin: 7.5rem 0rem;
+    padding: 3rem;
+    background-color: #FFFFFF;
+    border-radius: 0px 6px 6px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.logindetails input{
+    width: 14vw;
+    border: 3px solid #746D6D;
+    border-radius: 5px;
+    padding: 0.75rem 3rem;
+    margin: 7px;
+}
+.userimg{
+    background-image: url("./Images/Group\ 4.svg");
+    background-repeat: no-repeat;
+   
+}
+.passimg{
+    background-image: url("./Images/Group\ 3.svg");
+    background-repeat: no-repeat;
+
+}
+.link {
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 15px;
+text-decoration: none;
+color: #172CEE;
+padding-left: 12rem;
+}
+#link2{
+    padding-left: 0rem;
+}
+.btn{ margin-bottom: 1rem;
+color: white;
+width: max-content;
+padding: 0.75rem 2rem;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+background: #FA6B51;
+border-radius: 20px;
+border:none;
+margin-left: 6rem;
+}
+.remem input{
+    padding: 3px 2px;
+    width: 20px;
+}
+.remem{
+    padding: 1rem 1rem 1rem 11rem;
+    font-size: 17px;
+    font-weight:550 ;
+}
+.forget{
+    font-size: 17px;
+    font-weight: 550;
+}
+.logindetails Navlink{
+    font-size: 17px;
+    font-weight: 550;
+}
+.mainhead{
+    margin-top: 10px;
+}

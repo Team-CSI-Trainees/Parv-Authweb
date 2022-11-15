@@ -1,0 +1,13 @@
+.error{
+    background-color: white;
+}
+.error img{
+    margin: 1rem 29rem;
+    width: 35rem;
+    min-height: 35rem;
+}
+#link3{
+    color: blue;
+    padding-left: 4rem;
+    font-size: 30px;
+}
