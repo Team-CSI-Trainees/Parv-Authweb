@@ -5,18 +5,18 @@ import "./forget.css"
 const ForgetPass = () => {
   return (
     <div>
-      <div className='login'>
+      <div className='box1'>
         <div>
           <img src={img2} alt="img" />
         </div>
-        <div className='logindetails'>
-          <h1>Reset Your Password</h1>
-          <div className='subhead'>The verification email will be sent to the mailbox.
-            Please check It </div>
-          <div>Email</div>
-          <input type="text" placeholder=' Please Enter Your Email' required />
-          <button className='btn'>Send</button>
-          <NavLink className="link" to="/">Back To Login</NavLink>
+        <div className='box2'>
+          <div className='forgethead'>Reset Your Password</div>
+          <div className='subhead'>The verification email will be sent to the mailbox.</div>
+          <div className='subhead' id='subhead2'>Please check It </div>
+          <div className='email'>Email</div>
+          <input id='enter' type="text" placeholder=' Please Enter Your Email' required />
+          <button className='btn' id='forgetbtn'>Send</button>
+          <NavLink className="link" id="link4" to="/">Back To Login</NavLink>
         </div>
       </div>
     </div>

@@ -1,0 +1,71 @@
+.otphead {
+    margin: -1rem 14rem 0rem 0rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+}
+
+.otpsubhead {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #9E9A9A;
+    margin: 0rem 13rem 2rem 1rem;
+}
+
+.otpemail {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin: 0rem 26rem -2rem 0rem;
+}
+
+.mainotphead {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin: 2rem 22rem -1rem 0rem;
+}
+
+#link5 {
+    color: #464242;
+    margin: 0rem 0rem 0rem -21rem;
+}
+
+#subhead3 {
+    margin: -4rem 18rem 1rem 1rem;
+}
+
+.otpdetails input {
+    width: 16vw;
+    border: 3px solid #746D6D;
+    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    margin: 7px;
+}
+
+.otp {
+    justify-content: center;
+    display: flex;
+
+}
+
+.otpdetails {
+    margin: 7.5rem 0rem;
+    padding: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 0px 6px 6px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#verifybtn {
+    margin-left: 1rem !important;
+}

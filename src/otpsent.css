@@ -1,0 +1,38 @@
+.mainotp input {
+    font-size: 25px;
+    width: 1.5rem;
+    border: 2px solid #746D6D;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.mainotp {
+    display: flex;
+    padding: 1rem 0rem 1rem 1rem;
+}
+
+.otpsenthead {
+    margin: 0rem 10rem 1rem 0rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+}
+.otpsentsubhead{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #9E9A9A;
+    margin: 0rem 0rem 0rem 1rem;
+}
+#otpsubhead2{
+    margin: 0rem 12.2rem 0rem 0rem;
+}
+#confirmbtn{
+    font-size: larger;
+    margin-left: 1rem !important;
+}

@@ -1,3 +1,99 @@
-.field{
-    display: inline;
+.reghead{
+    margin-bottom: 1rem;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: -3rem;
+}
+.register{
+    justify-content: center;
+    display: flex;
+}
+.registerdetails{
+    margin: 3rem 0rem;
+    padding: 2rem 0rem 2rem 2rem;
+    background-color: #FFFFFF;
+    border-radius: 0px 6px 6px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.register img{
+    height: 35rem;
+    width: 25rem;
+    border-radius: 6px 0px 0px 6px;
+    padding: 1rem 1rem 3rem 1rem;
+    margin: 3rem 0rem;
+    background-color: rgba(139, 182, 178, 0.63);
+}
+
+.field {
+    display: flex;
+}
+.registersubhead{
+    display: grid;
+    justify-items: flex-start;
+}
+.registersubhead input{
+    width: 12rem;
+    border: 1px solid #746D6D;
+    border-radius: 5px;
+    padding: 0.75rem 0.5rem;
+    margin: 4px;
+}
+.registersubhead select{
+    width: 13.2rem;
+    border: 1px solid #746D6D;
+    border-radius: 5px;
+    padding: 0.75rem 0.5rem;
+    margin: 4px;
+}
+.maingender{
+    display: grid;
+}
+.genderflex{
+    justify-content: flex-start;
+    margin: 1rem 0rem;
+    display: flex;
+}
+.genderflex input{
+    width: 2rem;
+}
+label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+}
+.cap2{
+    display: flex;
+}
+.reme{
+    padding: 2rem 1rem;
+}
+#btn5{
+    margin-bottom: 0rem;
+    font-size: 15px;
+    margin-left: 9.5rem !important;
+}
+.leave{
+    font-weight: 800;
+}
+p{
+    color: red;
+    font-size: 10px;
+}
+@media only screen and (max-width: 600px){
+    .register{
+        flex-wrap: wrap;
+    }
+    .field{
+        flex-wrap: wrap;
+    }
+    .registersubhead input{
+        width: 18rem;
+    }
+    .registersubhead select{
+        width: 19rem;
+    }
 }

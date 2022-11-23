@@ -15,6 +15,7 @@
     padding: 1rem;
     color: white;
     text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .head {
@@ -24,13 +25,17 @@
     font-weight: 800;
     font-size: 71px;
     color: #FFFFFF;
-    text-shadow: 3px solid #746D6D
+    /* text-shadow: 3px solid #746D6D */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 #btn2 {
     background-color: #153B75;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
-    margin: 1rem 1rem 24rem 0rem;
+    margin: 1rem 1rem 24rem 0rem !important;  
+}
+
+@media only screen and (max-width: 600px){
     
 }

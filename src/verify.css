@@ -1,9 +1,35 @@
 .verify {
-    margin: 10rem 9rem;
+    margin: 5.6rem 9rem;
     background-color: rgba(255, 255, 255, 0.57);
-    width: 942.59px;
-    height: 573px;
+    width: 50rem;
+    height: 30rem;
     padding: 2rem 2rem;
     border-radius: 2px;
     display: inline-block;
+}
+
+.verify img {
+    width: 10.6rem;
+    height: 11.2rem;
+    margin-top: 2rem;
+}
+
+.verifyhead {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+    line-height: 29px;
+}
+
+#btn7 {
+    margin-top: 2rem;
+    margin-left: 0rem !important;
+    padding: 0.5rem 3rem !important;
+}
+.link7 {
+    color:white ;
+    text-decoration: none;
 }
