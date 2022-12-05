@@ -91,9 +91,39 @@ p{
         flex-wrap: wrap;
     }
     .registersubhead input{
-        width: 18rem;
+        width: 17rem;
     }
     .registersubhead select{
-        width: 19rem;
+        width: 18rem;
+    }
+    .registerdetails{
+        border-radius: 6px;
+        margin: 1rem 5rem;
+        padding: 2rem;
+    }
+    .cap2{
+        flex-wrap: wrap;
+    }
+    .reghead{
+        margin-left: 0rem;
+    }
+    .genderflex label{
+        font-size: 14px;
+    }
+    .genderflex input{
+        width: 20px;
+    }
+    .register img {
+        margin: 0rem;
+        background-color: transparent;
+        height: 25rem;
+        width: 21rem;
+        padding-bottom: 0rem;
+    }
+    #btn5{
+        margin-left: 6rem !important;
+    }
+    .reme {
+        padding: 2rem 4rem 1rem 6rem;
     }
 }

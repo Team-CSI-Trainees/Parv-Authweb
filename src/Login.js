@@ -6,10 +6,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import axios from "axios";
 
 const Login = () => {
-  function onChange(value) {
-    console.log('Captcha value:', value);
-    setRecaptcha(value);
-  }
+
   const [email, setEmail] = useState("")
   const [password, setPass] = useState("")
   const [recaptcha, setRecaptcha] = useState("")
@@ -18,22 +15,32 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    localStorage.setItem('login',true)
     if (recaptcha) {
-      axios.post("https://authentiction-app.herokuapp.com/login", { email: email, password: password }).then(
+      axios.post("https://authentication-app-by.onrender.com/", { email: email, password: password }).then(
         result => {
+          // localStorage.setItem('token',result.data.token)  
           console.log(result)
-          if (result.data === 'Matched') {
-            navigate("/h")
+          if (result.data) {
+            navigate("/home")
           }
-          else {
-            alert("Incorrect Details or User not found")
-            navigate("/signup")
-          }
-        }).catch(error => console.log(error))
+          // else {
+          //   alert("Incorrect Details or User not found")
+          //   navigate("/signup")
+          // }
+        }).catch(error => {
+          alert(error.response.data)
+          // alert("Incorrect Details or User not found")
+          // navigate("/signup")
+          })
     }
     else {
       alert("Verify ReCaptcha");
     }
+  }
+  function onChange(value) {
+    console.log('Captcha value:', value);
+    setRecaptcha(value);
   }
 
   return (
@@ -50,17 +57,18 @@ const Login = () => {
             <div className='remem'>
               <input className="chk" type="checkbox" name='remember' value="remember" />
               <label htmlFor="remember">Remember Me</label>
-              <NavLink className="link" to="./forgetpass">Forget Password?</NavLink>
+              <NavLink className="link" to="./reset">Forget Password?</NavLink>
             </div>
             <div className="cap">
               <ReCAPTCHA
-                sitekey="6LdQCQwjAAAAAKaRZNEidtK7Miw52mhn8TSoYeS5"
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                // sitekey="6LdQCQwjAAAAAKaRZNEidtK7Miw52mhn8TSoYeS5"
                 onChange={onChange}
               />
             </div>
             <input type="submit" className='btn' value="Sign In" />
             <div>
-              <div className='forget'>Don’t have a account?<NavLink className="link" id="link2" to="./signup"> Register</NavLink></div>
+              <div className='forget'>Don’t have a account?<NavLink className="link" id="link2" to="./register"> Register</NavLink></div>
             </div>
 
           </div>

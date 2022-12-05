@@ -33,3 +33,11 @@
     color:white ;
     text-decoration: none;
 }
+@media only screen and (max-width: 600px){
+    .verify{
+        width: 55vw;
+        height: 71vh;
+        margin: 3rem;
+        padding-top: 13vh;
+    }
+}

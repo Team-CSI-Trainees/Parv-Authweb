@@ -49,7 +49,7 @@ const Signup = () => {
     var MobileNumber = state.mobno;
     var password1 = state.password;
     var password2 = state.password2;
-    var valEmail = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\w{2,3})+$/;
+    var valEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
     var valPhone = /^\d{10}$/;
     var valName = /^[a-zA-Z ]+$/;
     const val = () => {
@@ -85,13 +85,13 @@ const Signup = () => {
         if (recaptcha && !err) {
             console.log(state.fullname, state.rollno, state.year, state.branch, state.email, state.mobno, state.gender, state.password, state.password2)
             console.log(state);
-            axios.post("https://authentiction-app.herokuapp.com/register", state).then(
+            axios.post("https://authentication-app-by.onrender.com/register", state).then(
                 result => {
-                    if (result.data.success) {
-                        navigate('/otpsent')
+                    if (result.data === "Registered"){
+                        navigate('/otp')
                     }
                     console.log(result)
-                }).catch(error => console.log(error))
+                }).catch(error =>{alert("Email Already Exist"); console.log(error)})
         }
         else {
             alert("Please Enter all data correctly and Verify I'm not a robot");
@@ -188,7 +188,8 @@ const Signup = () => {
                         </div>
                         <div className="cap2">
                             <ReCAPTCHA
-                                sitekey="6LdQCQwjAAAAAKaRZNEidtK7Miw52mhn8TSoYeS5"
+                                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                                // sitekey="6LdQCQwjAAAAAKaRZNEidtK7Miw52mhn8TSoYeS5"
                                 onChange={onChange}
                                 size={"normal"}
                             />

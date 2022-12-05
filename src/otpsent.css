@@ -13,6 +13,12 @@
     display: flex;
     padding: 1rem 0rem 1rem 1rem;
 }
+.mainotphead{
+    margin-top: 2rem;
+    margin-left: -21rem;
+    font-size: 20px;
+    font-weight: 600;
+}
 
 .otpsenthead {
     margin: 0rem 10rem 1rem 0rem;
@@ -36,3 +42,7 @@
     font-size: larger;
     margin-left: 1rem !important;
 }
+ #link5{
+    margin-left: -21rem;
+    color:#9E9A9A
+ }
